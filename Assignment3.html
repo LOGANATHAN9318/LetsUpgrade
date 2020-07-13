@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Current Date</title>
+    </head>
+    <body>
+        <h2 style="color: red;">The Current Date(mm-dd-yyyy):</h2>
+        <h3 style="background-color: yellow; width:80px;" id="type1"></h3><br>
+        <h2 style="color:blue;">The Current Date(mm/dd/yyyy):</h2>
+        <h3 style="background-color: yellow; width:80px ;" id="type2"></h3>
+        <br><br>
+        <button type="button" onclick="myfun()">Click to get Date</button>
+
+        <script>
+            function myfun(){
+            var date =new Date();
+            document.getElementById('type1').innerHTML=(date.getMonth()+"-"+date.getDate()+"-"+date.getFullYear());
+            document.getElementById('type2').innerHTML=(date.getMonth()+"/"+date.getDate()+"/"+date.getFullYear()); 
+            }
+        </script>
+
+    </body>
+</html>
